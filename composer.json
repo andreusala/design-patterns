@@ -1,0 +1,29 @@
+{
+    "name": "andreusala/design-patterns",
+    "description": "Review design patterns solutions",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreu Sala",
+            "email": "andreu.sala@onestic.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "phpunit/phpunit": "^7.2 | ^8 | ^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "DesignPatterns\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DesignPatterns\\Test\\": "test"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
