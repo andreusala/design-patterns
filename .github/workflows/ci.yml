@@ -1,23 +1,21 @@
 name: ci
 run-name: ${{ github.actor }} is running GitHub Actions
-on: pull_request
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
 jobs:
   design-patterns:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
         uses: actions/checkout@v3
-      - name: install-docker-compose
-        uses: ndeloof/install-docker-compose
-        with:
-          version: v1.17.1
-          legacy: true
       - name: build-image
-        run: |
-          docker-compose up -d
+        run: docker-compose up -d
       - name: composer-install
-        run: |
-          docker exec -it designpatterns_phpfpm_1 composer install
+        run: docker exec -it designpatterns_phpfpm_1 composer install
       - name: run-tests
-        run: |
-          docker exec -it designpatterns_phpfpm_1 vendor/bin/phpunit -c phpunit.xml
+        run: docker exec -it designpatterns_phpfpm_1 vendor/bin/phpunit -c phpunit.xml
