@@ -1,0 +1,6 @@
+*.iml
+.idea
+vendor/*
+nbproject
+.phpunit.result.cache
+.phpunit.cache/*
