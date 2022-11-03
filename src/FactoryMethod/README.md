@@ -16,7 +16,7 @@ Es un patrón de diseño creacional que proporciona una interfaz para crear obje
 
 
 ### English <img src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/gb.svg" width="22" />
-Is a creational design pattern that provides an interface for creating objects in a superclass, while allowing subclasses to alter the type of objects to be created.
+It is a creational design pattern that provides an interface for creating objects in a superclass, while allowing subclasses to alter the type of objects to be created.
 
 #### How to implement it
 1. Make all products follow the same interface. This interface should declare methods that make sense in all products.

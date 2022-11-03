@@ -16,7 +16,7 @@ Es un patrón de diseño creacional que nos permite producir familias de objetos
 
 
 ### English <img src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/gb.svg" width="22" />
-Is a creational design pattern that allows us to produce families of related objects without specifying their concrete classes.
+It is a creational design pattern that allows us to produce families of related objects without specifying their concrete classes.
 
 #### How to implement it
 1. Map a matrix of different types of products against variants of those products.
